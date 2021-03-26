@@ -1,0 +1,55 @@
+@import './reset.scss';
+@import './fonts/fonts.scss';
+@import './color.scss';
+
+* {
+  font-family: Montserrat-Regular;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: $blueGray;
+  .MuiInputBase-input {
+    color: $blueGray;
+  }
+  .MuiInput-underline:after {
+    border-color: $yellow;
+  }
+}
+
+.MuiMenuItem-root.dc-single-select-dd-option {
+  font-size: 3rem;
+  color: $blueGray;
+
+  &.Mui-disabled {
+    color: $blue;
+    font-size: 5.5rem;
+    opacity: 1;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 2.5rem;
+
+    &.Mui-disabled {
+      font-size: 3rem;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    font-size: 2.2rem;
+
+    &.Mui-disabled {
+      font-size: 3.7rem;
+    }
+  }
+}
+
+.dc-uom {
+  display: flex;
+  flex-direction: column;
+
+  font-family: Montserrat-Bold;
+
+  height: 100vh;
+  width: 100vw;
+}

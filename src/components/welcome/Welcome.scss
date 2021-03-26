@@ -1,0 +1,133 @@
+.dc-uom-welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  img {
+    margin-top: 1.2rem;
+    height: 78px;
+    width: 416px;
+  }
+
+  .dc-uon-welcome-divider {
+    height: 1px;
+    width: 100%;
+    margin: 1.2rem 0;
+  }
+
+  .dc-uom-welcome-message {
+    width: 75%;
+    margin: 0 auto;
+
+    > * {
+      margin-bottom: 2.4rem;
+    }
+
+    .dc-uom-welcome-header {
+      font-size: 5.5rem;
+      font-family: Montserrat-Bold;
+    }
+
+    .dc-uom-welcome-instructions-header,
+    .dc-uom-welcome-end {
+      font-size: 3rem;
+    }
+
+    .dc-uom-welcome-instructions {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      width: 100%;
+
+      font-size: 1.5rem;
+      line-height: 150%;
+
+      > p {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 0 3rem;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    img {
+      margin-top: 0.8rem;
+      height: calc(78px * 0.75);
+      width: calc(416px * 0.75);
+    }
+
+    .dc-uon-welcome-divider {
+      margin: 0.8rem 0;
+    }
+
+    .dc-uom-welcome-message {
+      > * {
+        margin-bottom: 1.6rem;
+      }
+
+      .dc-uom-welcome-header {
+        font-size: 4rem;
+      }
+
+      .dc-uom-welcome-instructions-header,
+      .dc-uom-welcome-end {
+        font-size: 2.5rem;
+      }
+
+      .dc-uom-welcome-instructions {
+        font-size: 1.3rem;
+
+        > p {
+          margin: 0;
+        }
+        > p:nth-child(2) {
+          margin: 0 3rem;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    img {
+      margin-top: 0.6rem;
+      height: calc(78px * 0.65);
+      width: calc(416px * 0.65);
+    }
+
+    .dc-uon-welcome-divider {
+      margin: 0.6rem 0;
+    }
+
+    .dc-uom-welcome-message {
+      width: 90%;
+      > * {
+        margin-bottom: 1.2rem;
+      }
+
+      .dc-uom-welcome-header {
+        font-size: 3.7rem;
+      }
+
+      .dc-uom-welcome-instructions-header,
+      .dc-uom-welcome-end {
+        font-size: 2.2rem;
+      }
+
+      .dc-uom-welcome-instructions {
+        flex-direction: column;
+        font-size: 1.5rem;
+
+        > p {
+          margin: 0.6rem 1rem;
+        }
+      }
+    }
+  }
+}

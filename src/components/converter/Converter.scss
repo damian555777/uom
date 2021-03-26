@@ -1,0 +1,51 @@
+.dc-converter {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  > div {
+    display: flex;
+    align-items: center;
+
+    width: 25%;
+
+    margin: 2.4rem 0;
+  }
+
+  .MuiInputBase-input {
+    font-size: 3rem;
+    width: 25rem;
+  }
+
+  .dc-single-select-dd {
+    width: 12.5rem;
+
+    margin-right: 5rem;
+
+    > .MuiSelect-selectMenu {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+
+    > div {
+      display: flex;
+      align-items: center;
+
+      width: 50%;
+    }
+
+    .MuiInputBase-input {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    .MuiInputBase-input {
+      font-size: 2.2rem;
+    }
+  }
+}
